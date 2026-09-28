@@ -54,8 +54,7 @@ Make sure Node.js is installed.
 
 Clone the repository and navigate to the project directory:
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https:https://github.com/AraFa776/File-Info.git
 
 No external packages are required because the project uses only Node.js built-in modules.
 
