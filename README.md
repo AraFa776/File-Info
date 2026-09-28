@@ -4,7 +4,7 @@ A simple Node.js Command-Line Interface (CLI) tool that displays basic informati
 
 Project URL
 
-GitHub: https://github.com/AraFa776/File-Info/tree/main
+URL: https://roadmap.sh/projects/nodejs-folder-info
 
 Features
 Get information about the current working directory.
