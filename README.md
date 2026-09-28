@@ -2,7 +2,9 @@ Folder Info CLI
 
 A simple Node.js Command-Line Interface (CLI) tool that displays basic information about a folder, including the number of files and subfolders inside it.
 
-The project uses Node.js built-in modules, mainly fs/promises and path.
+Project URL
+
+GitHub: https://github.com/AraFa776/File-Info/tree/main
 
 Features
 Get information about the current working directory.
@@ -34,7 +36,7 @@ If no path is provided, it uses the current working directory:
 
 process.cwd()
 
-If a folder name or relative path is provided, it is joined with the current working directory using:
+If a folder name or relative path is provided, it is joined with the current working directory:
 
 path.join(process.cwd(), process.argv[2])
 
@@ -48,22 +50,18 @@ Counts files and folders.
 Prints the results.
 Installation
 
-Make sure you have Node.js installed.
+Make sure Node.js is installed.
 
-Clone or download the project, then navigate to the project directory:
+Clone the repository and navigate to the project directory:
 
-cd FolderInfo
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+cd YOUR_REPOSITORY
 
-No external packages are required because the project only uses Node.js built-in modules.
+No external packages are required because the project uses only Node.js built-in modules.
 
 Usage
 Check the Current Directory
-
-Run:
-
 node app.js
-
-The program will analyze the current working directory.
 
 Example output:
 
@@ -72,14 +70,7 @@ path: C:\Users\HP\FolderInfo
 Files: 2
 Folders: 1
 Check a Specific Folder
-
-You can provide a folder name or relative path:
-
 node app.js test
-
-Or:
-
-node app.js projects
 
 Example:
 
@@ -87,9 +78,9 @@ Folder: test
 path: C:\Users\HP\FolderInfo\test
 Files: 5
 Folders: 3
-Command-Line Argument
+Command-Line Arguments
 
-The folder is provided using:
+The application uses:
 
 process.argv[2]
 
@@ -97,13 +88,7 @@ For example:
 
 node app.js test
 
-process.argv contains the command-line arguments passed to the Node.js process.
-
-The application uses the third element:
-
-process.argv[2]
-
-because:
+The arguments are:
 
 process.argv[0] → Node.js executable
 process.argv[1] → JavaScript file
@@ -118,12 +103,9 @@ The application also sets:
 
 process.exitCode = 2;
 
-This indicates that the program finished with an error.
+to indicate that the program finished with an error.
 
 Main Concepts Practiced
-
-This project is designed to practice several important Node.js concepts:
-
 process.cwd()
 process.argv
 process.exitCode
@@ -137,22 +119,7 @@ async/await
 try/catch
 File system operations
 Command-line applications
-Example
-
-Running:
-
-node app.js .
-
-may produce:
-
-Folder: FolderInfo
-path: C:\Users\HP\FolderInfo
-Files: 2
-Folders: 1
 Future Improvements
-
-Possible improvements for the project:
-
 Support absolute paths.
 Recursively analyze nested folders.
 Display the total size of files.
